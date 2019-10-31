@@ -5,6 +5,7 @@
   "author": "--author",
   "main": "index.js",
   "scripts": {
+    "dev": "egg-bin dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "ISC",
