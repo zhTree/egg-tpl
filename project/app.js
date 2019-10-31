@@ -16,6 +16,9 @@ class AppBootHook {
 
   initValidate() {
     const app = this.app;
+    /**
+     * 添加自定义的validate
+     */
     app.validator.addRule('numberString', (rule, value) => {
       const reg = /^[0-9]+$/;
       if (!reg.test(value)) {
@@ -26,11 +29,14 @@ class AppBootHook {
 
   initRelation() {
     const app = this.app;
-    app.model.KefuConclusion.belongsTo(app.model.KefuCategory, {
-      foreignKey: 'catId',
-      targetKey: 'id',
-      as: 'categoryDetail'
-    });
+    /**
+     * 添加模型关联
+     */
+    // app.model.A.belongsTo(app.model.B, {
+    //   foreignKey: 'id',
+    //   targetKey: 'id',
+    //   as: 'c'
+    // });
   }
 }
 
