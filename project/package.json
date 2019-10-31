@@ -2,6 +2,7 @@
   "name": "egg-cli",
   "version": "1.0.0",
   "description": "",
+  "author": "egg",
   "private": true,
   "egg": {
     "declarations": true
@@ -49,6 +50,5 @@
     "type": "git",
     "url": ""
   },
-  "author": "zqk",
   "license": "MIT"
 }
