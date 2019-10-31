@@ -1,8 +1,8 @@
 {
-  "name": "egg-cli",
-  "version": "1.0.0",
-  "description": "",
-  "author": "egg",
+  "name": "%name",
+  "version": "%vs",
+  "description": "%des",
+  "author": "%author",
   "private": true,
   "egg": {
     "declarations": true
