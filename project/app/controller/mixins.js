@@ -25,7 +25,7 @@ module.exports = {
       this.success(ret[0]);
       return true;
     } else /* 数据重复 */{
-      this.fail(this.HAS_EXIST);
+      this.fail();
       return false;
     }
   },
