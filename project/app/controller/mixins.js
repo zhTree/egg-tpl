@@ -3,7 +3,10 @@ const CONSTANT_OBJECT = require('../const');
 module.exports = {
   ...CONSTANT_OBJECT,
   
-  rules: {},
+  rules: {
+    page: { type: 'numberString', required: false },
+    pageSize: { type: 'numberString', required: false }
+  },
 
   success(data) {
     this.ctx.body = {
