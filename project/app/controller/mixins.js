@@ -47,6 +47,12 @@ module.exports = {
   validateParams(rules = this.rules, obj = this.ctx.request.body) {
     this.ctx.validate(rules, obj);
     return obj;
+  },
+
+  throwError(status, message) {
+    const error = new Error(message);
+    error.status = status;
+    throw error;
   }
 
 };
